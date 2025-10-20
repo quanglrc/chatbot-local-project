@@ -1,0 +1,80 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #969799;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #2a2b32;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0 10px 0;
+}
+
+.sidebar-header img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* --- Nút New Chat --- */
+.new-chat-btn {
+  background-color: #b2b2b8;
+  color: #ececf1;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 0 12px;
+  width: calc(100% - 24px);
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.new-chat-btn:hover {
+  background-color: #40414f;
+}
+
+/* --- Danh sách Chat --- */
+.chat-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 6px; /* 👈 Sát hơn */
+  padding: 0 8px 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-item {
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ececf1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.chat-item:hover {
+  background-color: #2a2b32;
+}
+
+.chat-item.active {
+  background-color: #343541;
+}
+
+/* --- Thanh cuộn nhỏ gọn --- */
+.chat-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background-color: #4a4b57;
+  border-radius: 3px;
+}

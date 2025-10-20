@@ -1,0 +1,60 @@
+.chatbox {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #12121c;
+  color: white;
+  overflow-y: auto;
+  padding-bottom: 80px; /* chừa chỗ cho inputbar */
+}
+
+/* --- Input Bar --- */
+.inputbar {
+  position: absolute;
+  bottom: 16px; /* cách mép dưới 16px */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 90%; /* chiều rộng 90% chatbox */
+  max-width: 800px;
+  background-color: #1e1e2e;
+  border: 1px solid #2a2a40;
+  border-radius: 9999px;
+  padding: 10px 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inputbar input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 9999px;
+  outline: none;
+  background-color: #2a2a40;
+  color: #e2e2e2;
+  font-size: 1rem;
+}
+
+.inputbar input:focus {
+  border: none;
+  background-color: #2f2f4d;
+}
+
+.inputbar button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 9999px;
+  background-color: #10a37f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.inputbar button:hover {
+  background-color: #0e906f;
+  transform: scale(1.03);
+}
